@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 Ameerkhan
+Copyright (c) 2026 Ameer Khan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,10 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+The connectome data this project is derived from (male Drosophila CNS,
+neuPrint male-cns:v1.0) is the work of Janelia Research Campus / FlyEM and is
+distributed under its own terms. This repository contains a derived subnetwork
+(connectome_cache/flight_graph_*.npz), not the source dataset.

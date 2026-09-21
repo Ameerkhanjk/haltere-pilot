@@ -1,0 +1,140 @@
+{
+  "leaderboard": {
+    "real connectome": {
+      "return": 234.47523498535156,
+      "fruit_per_min": 22.3125,
+      "crashes_per_min": 0.9375,
+      "tree_crashes": 30,
+      "ground_crashes": 0,
+      "mean_tilt_deg": 9.742763241645953
+    },
+    "rewired control": {
+      "return": 235.53428649902344,
+      "fruit_per_min": 23.3125,
+      "crashes_per_min": 0.90625,
+      "tree_crashes": 29,
+      "ground_crashes": 0,
+      "mean_tilt_deg": 9.615253277405401
+    },
+    "autopilot + gyro": {
+      "fruit_per_min": 24.09375,
+      "crashes_per_min": 0.75
+    },
+    "autopilot, no gyro": {
+      "fruit_per_min": 4.6875,
+      "crashes_per_min": 3.53125
+    },
+    "random": {
+      "fruit_per_min": 0.40625,
+      "crashes_per_min": 55.6875
+    }
+  },
+  "ablation_base": {
+    "return": 150.79429626464844,
+    "fruit_per_min": 21.5,
+    "crashes_per_min": 1.0,
+    "tree_crashes": 16,
+    "ground_crashes": 0,
+    "mean_tilt_deg": 9.826701594553722
+  },
+  "ablations": [
+    {
+      "port": "haltere",
+      "label": "Haltere afferents",
+      "n": 204,
+      "fruit": 0.5,
+      "crashes": 62.75,
+      "random_fruit": 18.5625,
+      "random_crashes": 1.375
+    },
+    {
+      "port": "jo",
+      "label": "Johnston's organ (wind/gravity)",
+      "n": 386,
+      "fruit": 21.875,
+      "crashes": 1.5,
+      "random_fruit": 7.5625,
+      "random_crashes": 1.125
+    },
+    {
+      "port": "lptc",
+      "label": "Optic-flow cells (HS/VS/H2)",
+      "n": 44,
+      "fruit": 10.375,
+      "crashes": 8.875,
+      "random_fruit": 21.8125,
+      "random_crashes": 1.125
+    },
+    {
+      "port": "ocelli",
+      "label": "Ocellar neurons",
+      "n": 20,
+      "fruit": 3.1875,
+      "crashes": 4.5625,
+      "random_fruit": 21.375,
+      "random_crashes": 1.5
+    },
+    {
+      "port": "lc10",
+      "label": "LC10 object tracking",
+      "n": 960,
+      "fruit": 0.125,
+      "crashes": 1.375,
+      "random_fruit": 10.6875,
+      "random_crashes": 1.1875
+    },
+    {
+      "port": "loom",
+      "label": "Looming detectors",
+      "n": 311,
+      "fruit": 22.1875,
+      "crashes": 0.9375,
+      "random_fruit": 20.4375,
+      "random_crashes": 1.8125
+    }
+  ],
+  "gust": {
+    "intact": {
+      "peak_tilt_deg": 16.843788146972656,
+      "tilt_at_300ms_deg": 6.952288627624512,
+      "crashed_frac": 0.0
+    },
+    "no_halteres": {
+      "peak_tilt_deg": 163.2836151123047,
+      "tilt_at_300ms_deg": 42.34954833984375,
+      "crashed_frac": 1.0
+    },
+    "cut_arc": {
+      "peak_tilt_deg": 25.29165267944336,
+      "tilt_at_300ms_deg": 17.398571014404297,
+      "crashed_frac": 0.0
+    },
+    "rewired": {
+      "peak_tilt_deg": 14.185111999511719,
+      "tilt_at_300ms_deg": 4.313392639160156,
+      "crashed_frac": 0.0
+    }
+  },
+  "latency_ms": {
+    "haltere": 20.0,
+    "jo": 1040.0,
+    "lptc": 140.0,
+    "ocelli": 140.0,
+    "lc10": 220.0,
+    "loom": 900.0,
+    "descending": 1020.0,
+    "vnc": 260.0,
+    "wing_mn": 140.0
+  },
+  "n_direct_haltere_mn_edges": 254,
+  "synapse_drift": {
+    "real connectome": {
+      "frac_moved_10pct": 0.7787851095199585,
+      "median_abs_change": 0.609126091003418
+    },
+    "rewired control": {
+      "frac_moved_10pct": 0.9064359664916992,
+      "median_abs_change": 0.7271158695220947
+    }
+  }
+}

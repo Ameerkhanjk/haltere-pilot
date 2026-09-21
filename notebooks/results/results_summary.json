@@ -1,0 +1,317 @@
+{
+  "config": {
+    "dataset": "male-cns:v1.0",
+    "smoke_test": true,
+    "device": "mps",
+    "min_synapses": 5,
+    "max_neurons": 6000,
+    "max_edges": 150000,
+    "ticks": 1,
+    "updates": 25,
+    "rollout_T": 64,
+    "batch_envs": 8,
+    "seed": 0,
+    "env": {
+      "arena": 16.0,
+      "n_food": 10,
+      "odor_sigma": 2.5,
+      "eat_radius": 1.2,
+      "shaping": 0.5,
+      "step_cost": 0.002,
+      "catch_penalty": 1.0,
+      "food_reward": 1.0,
+      "threat_speed": 0.14,
+      "catch_radius": 1.0,
+      "max_speed": 0.35,
+      "max_turn": 0.35
+    }
+  },
+  "graph": {
+    "n_neurons": 6000,
+    "n_connections": 150000,
+    "n_sensory": 128,
+    "n_descending": 522,
+    "pct_inhibitory": 41.67333333333333,
+    "n_neuropils": 88
+  },
+  "reference_controllers": {
+    "random": {
+      "food": 1.5,
+      "caught": 2.03125,
+      "return": -7.7748565673828125
+    },
+    "chemotaxis": {
+      "food": 11.1875,
+      "caught": 1.6875,
+      "return": 7.219687461853027
+    },
+    "chemotaxis+avoid": {
+      "food": 6.59375,
+      "caught": 0.5,
+      "return": 2.499790668487549
+    }
+  },
+  "final_training": {
+    "real": {
+      "reward_per_step": -0.019931233767420054,
+      "food_per_100": 0.72265625,
+      "caught_per_100": 1.69921875
+    },
+    "rewired": {
+      "reward_per_step": -0.007569693040568382,
+      "food_per_100": 0.9765625,
+      "caught_per_100": 0.625
+    }
+  },
+  "evaluation": {
+    "real": {
+      "return": -1.3391904830932617,
+      "food": 1.21875,
+      "caught": 1.71875,
+      "n_threat_frames": 1197,
+      "n_forage_frames": 1001
+    },
+    "rewired": {
+      "return": 0.3930327892303467,
+      "food": 2.5625,
+      "caught": 0.9375
+    },
+    "fraction_neurons_ever_active": 0.996
+  },
+  "synapse_gains": {
+    "real": {
+      "mean": 1.0015922784805298,
+      "std": 0.32185208797454834
+    },
+    "rewired": {
+      "mean": 1.0004353523254395,
+      "std": 0.30107536911964417
+    }
+  },
+  "neuropil_selectivity": [
+    {
+      "neuropil": "LO(R)",
+      "n_neurons": 125,
+      "selectivity": -0.05612906441092491,
+      "mean_activity": 0.03144261613488197
+    },
+    {
+      "neuropil": "LegNp(T3)(R)",
+      "n_neurons": 252,
+      "selectivity": -0.003436777275055647,
+      "mean_activity": 0.05006187781691551
+    },
+    {
+      "neuropil": "PLP(R)",
+      "n_neurons": 113,
+      "selectivity": 0.015632808208465576,
+      "mean_activity": 0.050002388656139374
+    },
+    {
+      "neuropil": "ME(L)",
+      "n_neurons": 198,
+      "selectivity": 0.016846954822540283,
+      "mean_activity": 0.026106713339686394
+    },
+    {
+      "neuropil": "LegNp(T2)(R)",
+      "n_neurons": 182,
+      "selectivity": 0.03382514417171478,
+      "mean_activity": 0.04005460813641548
+    },
+    {
+      "neuropil": "AVLP(L)",
+      "n_neurons": 191,
+      "selectivity": 0.036313511431217194,
+      "mean_activity": 0.02008824422955513
+    },
+    {
+      "neuropil": "ANm",
+      "n_neurons": 249,
+      "selectivity": 0.039876196533441544,
+      "mean_activity": 0.04596884176135063
+    },
+    {
+      "neuropil": "GNG",
+      "n_neurons": 654,
+      "selectivity": 0.06358189135789871,
+      "mean_activity": 0.05020049586892128
+    },
+    {
+      "neuropil": "AVLP(R)",
+      "n_neurons": 265,
+      "selectivity": 0.07957888394594193,
+      "mean_activity": 0.024212945252656937
+    },
+    {
+      "neuropil": "LegNp(T3)(L)",
+      "n_neurons": 250,
+      "selectivity": 0.11974611133337021,
+      "mean_activity": 0.03481854125857353
+    },
+    {
+      "neuropil": "ME(R)",
+      "n_neurons": 304,
+      "selectivity": 0.13234956562519073,
+      "mean_activity": 0.08829905092716217
+    },
+    {
+      "neuropil": "PVLP(R)",
+      "n_neurons": 120,
+      "selectivity": 0.13828042149543762,
+      "mean_activity": 0.04117516800761223
+    },
+    {
+      "neuropil": "LegNp(T1)(L)",
+      "n_neurons": 141,
+      "selectivity": 0.1514536589384079,
+      "mean_activity": 0.0442967414855957
+    },
+    {
+      "neuropil": "LegNp(T2)(L)",
+      "n_neurons": 237,
+      "selectivity": 0.16420063376426697,
+      "mean_activity": 0.036489591002464294
+    },
+    {
+      "neuropil": "AL(R)",
+      "n_neurons": 188,
+      "selectivity": 0.2312820851802826,
+      "mean_activity": 0.1529453694820404
+    },
+    {
+      "neuropil": "AL(L)",
+      "n_neurons": 155,
+      "selectivity": 0.26524490118026733,
+      "mean_activity": 0.20670495927333832
+    }
+  ],
+  "lesion_study": [
+    {
+      "neuropil": "AL(L)",
+      "n_neurons": 155,
+      "intact": -0.6045960783958435,
+      "lesioned": -0.3810978829860687,
+      "random_control": -0.5276331901550293,
+      "drop": -0.22349819540977478,
+      "excess_drop": -0.14653530716896057
+    },
+    {
+      "neuropil": "ANm",
+      "n_neurons": 249,
+      "intact": -0.6045960783958435,
+      "lesioned": -0.5119234323501587,
+      "random_control": -0.5489711165428162,
+      "drop": -0.09267264604568481,
+      "excess_drop": -0.03704768419265747
+    },
+    {
+      "neuropil": "AVLP(R)",
+      "n_neurons": 265,
+      "intact": -0.6045960783958435,
+      "lesioned": -0.4933438301086426,
+      "random_control": -0.5193852782249451,
+      "drop": -0.11125224828720093,
+      "excess_drop": -0.02604144811630249
+    },
+    {
+      "neuropil": "ME(L)",
+      "n_neurons": 198,
+      "intact": -0.6045960783958435,
+      "lesioned": -0.529494047164917,
+      "random_control": -0.5407040119171143,
+      "drop": -0.07510203123092651,
+      "excess_drop": -0.011209964752197266
+    },
+    {
+      "neuropil": "LegNp(T2)(R)",
+      "n_neurons": 182,
+      "intact": -0.6045960783958435,
+      "lesioned": -0.744844913482666,
+      "random_control": -0.7409107685089111,
+      "drop": 0.1402488350868225,
+      "excess_drop": 0.003934144973754883
+    },
+    {
+      "neuropil": "LO(R)",
+      "n_neurons": 125,
+      "intact": -0.6045960783958435,
+      "lesioned": -0.5576702356338501,
+      "random_control": -0.5448626279830933,
+      "drop": -0.04692584276199341,
+      "excess_drop": 0.012807607650756836
+    },
+    {
+      "neuropil": "AVLP(L)",
+      "n_neurons": 191,
+      "intact": -0.6045960783958435,
+      "lesioned": -0.557567834854126,
+      "random_control": -0.5229765176773071,
+      "drop": -0.04702824354171753,
+      "excess_drop": 0.03459131717681885
+    },
+    {
+      "neuropil": "AL(R)",
+      "n_neurons": 188,
+      "intact": -0.6045960783958435,
+      "lesioned": -0.6634787917137146,
+      "random_control": -0.5207197666168213,
+      "drop": 0.058882713317871094,
+      "excess_drop": 0.1427590250968933
+    },
+    {
+      "neuropil": "LegNp(T3)(L)",
+      "n_neurons": 250,
+      "intact": -0.6045960783958435,
+      "lesioned": -0.56147700548172,
+      "random_control": -0.39265549182891846,
+      "drop": -0.043119072914123535,
+      "excess_drop": 0.1688215136528015
+    },
+    {
+      "neuropil": "LegNp(T2)(L)",
+      "n_neurons": 237,
+      "intact": -0.6045960783958435,
+      "lesioned": -0.5927655696868896,
+      "random_control": -0.3799839913845062,
+      "drop": -0.011830508708953857,
+      "excess_drop": 0.21278157830238342
+    },
+    {
+      "neuropil": "ME(R)",
+      "n_neurons": 304,
+      "intact": -0.6045960783958435,
+      "lesioned": -0.5365872383117676,
+      "random_control": -0.3166874051094055,
+      "drop": -0.06800884008407593,
+      "excess_drop": 0.21989983320236206
+    },
+    {
+      "neuropil": "LegNp(T3)(R)",
+      "n_neurons": 252,
+      "intact": -0.6045960783958435,
+      "lesioned": -0.5533126592636108,
+      "random_control": -0.16772690415382385,
+      "drop": -0.051283419132232666,
+      "excess_drop": 0.385585755109787
+    },
+    {
+      "neuropil": "LegNp(T1)(L)",
+      "n_neurons": 141,
+      "intact": -0.6045960783958435,
+      "lesioned": -1.1355602741241455,
+      "random_control": -0.6464831829071045,
+      "drop": 0.530964195728302,
+      "excess_drop": 0.489077091217041
+    },
+    {
+      "neuropil": "GNG",
+      "n_neurons": 654,
+      "intact": -0.6045960783958435,
+      "lesioned": -0.5670813322067261,
+      "random_control": 0.0772467702627182,
+      "drop": -0.03751474618911743,
+      "excess_drop": 0.6443281024694443
+    }
+  ]
+}

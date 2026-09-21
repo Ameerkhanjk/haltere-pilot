@@ -1,0 +1,12 @@
+{
+  "variant": "real",
+  "seed": 0,
+  "final_eval": {
+    "return": 234.4752197265625,
+    "fruit_per_min": 22.3125,
+    "crashes_per_min": 0.9375,
+    "tree_crashes": 30,
+    "ground_crashes": 0,
+    "mean_tilt_deg": 9.742762758125478
+  }
+}

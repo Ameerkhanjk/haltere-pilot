@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "Haltere Pilot: a connectome-constrained flight controller"
+message: "If you use this code, please cite it and the underlying connectome dataset."
+type: software
+authors:
+  - family-names: Khan
+    given-names: Ameer
+abstract: >-
+  A flight controller built from the Drosophila male CNS connectome, in which a
+  simulated quadrotor's gyroscope is wired into the fly's haltere afferents and
+  motor commands are read from real wing motor neurons. Includes ablation,
+  reflex-arc and rewired-control experiments, and a real-time 3D viewer.
+keywords:
+  - connectome
+  - Drosophila
+  - neural control
+  - halteres
+  - imitation learning
+license: MIT
+date-released: 2026-09-20

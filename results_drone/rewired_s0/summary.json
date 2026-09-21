@@ -1,0 +1,12 @@
+{
+  "variant": "rewired",
+  "seed": 0,
+  "final_eval": {
+    "return": 235.53427124023438,
+    "fruit_per_min": 23.3125,
+    "crashes_per_min": 0.90625,
+    "tree_crashes": 29,
+    "ground_crashes": 0,
+    "mean_tilt_deg": 9.615253376158554
+  }
+}
